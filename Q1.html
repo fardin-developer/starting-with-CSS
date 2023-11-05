@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Solution</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- INTERNAL CSS -->
+    <style>
+        .internal h2{
+            color:red;
+        }
+        .internal p{
+            font-size: 18px;;
+        }
+        .internal .internal-css{
+            color: blue;
+            font-size: large;
+        }
+        .internal-span{
+            text-decoration: underline;
+        }
+        .internal p{
+            font-size: 24px;
+        }
+        .pink{
+            color: #c91c78;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div class="container">
+        <h1 style="color: green;text-align: center;">Ways To Add CSS To HTML Documents.</h1>
+        <div class="inline">
+            <!-- INLINE CSS -->
+            <h2 style="color: red;">INLINE CSS</h2>
+            <p style="font-size: x-large;"><span><u>Inline CSS:</u></span> This is the simplest way to add CSS to an HTML document, but it is not recommended for large or complex projects.</p>
+            <p style= "color: blue; font-size: 20px;">Example: Let's say you want to style a paragraph with blue text color and a font size of 20 pixels. Here's how you can achieve it using inline CSS</p>
+            <p style="color: #c91c78;font-size: 20px;">< p style= "color: blue; font-size: 20px;">This is a paragraph with inline CSS. The effect of this you will see in the above &#8593 paragraph.< /p></p>
+        </div>
+        <div class="internal">
+            <h2>INTERNAL CSS</h2>
+            <p><span class="internal-span">Internal CSS:</span> This is a more efficient way to add CSS to an HTML document, as it allows you to store all of your CSS code in a single file.</p>
+            <p class="internal-css">To use Internal CSS, you include a 
+                style element within the head section of your HTML document.Inside the style> element, you can write CSS rules using standard CSS syntax.</p>
+            <p class="pink">The CSS given to the above paragraph &#8593 is by internal CSS</p>
+            <p >
+        </div>
+        <div class="external">
+            <h2>EXTERNAL CSS</h2>
+            <p class="external-para"><span class="external-span">External CSS:</span> This is the most recommended way to add CSS to an HTML document, as it allows you to separate the content (HTML) from the presentation (CSS).</p>
+            <p class="external-para">To implement External CSS, start by creating a new file with a .css extension (e.g., styles.css) and define your CSS rules inside it. Each CSS rule should follow the standard CSS syntax.</p>
+            <p class="external-css">Once the external CSS file is created,link it to the HTML document. This is achieved by adding a < link > element in the < head> section of the HTML file, specifying the path to the CSS file using the href attribute.</p>
+            <p  class="external-para pink">The CSS given to the above paragraph &#8593 is by external CSS</p>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Solution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+        display: flex;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900px;
+        }
+        .form{
+            width: max-content;
+        }
+        .form h1,select{
+            text-align: center;
+            color: #097ddc;
+        }
+        input[type=text], input[type=email],input[type=password],
+        input[type=month],input[type=number],input[type=submit],select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #555;
+            outline: none;
+            border-color: #1c91f0;
+        }
+        select{
+            opacity: 0.6;
+        }
+        select:hover{
+            opacity: 1.0;
+        }
+        
+        
+        input[type=text]:focus,input[type=email]:focus,input[type=password]:focus,input[type=month]:focus,input[type=number]:focus {
+                background-color: lightblue;
+        }
+        input[type=submit]{
+            background-color: #1c91f0;
+            color: white;
+            cursor: pointer;
+        }
+        fieldset{
+            border-color: #1c91f0;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" method="get" class="form">
+        <h1>Personal Information Data</h1>
+        <fieldset>
+            <legend>Personal information</legend>
+            <fieldset>
+                <legend>Name</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname">
+            </fieldset>
+            <fieldset>
+                <legend>Gender</legend>
+                <label for="male">Male:</label>
+                <input type="radio" name="gender" id="male">
+                <label for="female">Female:</label>
+                <input type="radio" name="gender" id="female">
+            </fieldset>
+            <fieldset>
+                <legend>Language Known</legend>
+                <label for="english">English</label>
+                <input type="checkbox" name="English" id="english">
+                <label for="hindi">Hindi</label>
+                <input type="checkbox" name="Hindi" id="hindi">
+                <label for="german">German</label>
+                <input type="checkbox" name="German" id="german">
+                <label for="french">French</label>
+                <input type="checkbox" name="French" id="french">
+            </fieldset>
+            <fieldset>
+                <legend>Date Of Birth</legend>
+                <label for="day">Date</label>
+                <input type="number" name="number" id="day">
+                <label for="month">Month: &  Year:</label>
+                <input type="month" name="Month" id="month">
+            </fieldset>
+            <fieldset>
+                <legend>Email Address</legend>
+                <label for="email">Email Id:</label>
+                <input type="email" name="email" id="email">
+                <label for="psw">Password:</label>
+                <input type="password" name="password" id="psw">
+            </fieldset>
+            <fieldset>
+                <legend>Nationality:</legend>
+                <select type="text" id="country" name="country">
+                    <option value="blank">COUNTRY</option>
+                    <option value="india">INDIA</option>
+                    <option value="au">Australia</option>
+                    <option value="ca">Canada</option>
+                    <option value="usa">USA</option>
+            </fieldset>
+           
+            <fieldset>
+                <input type="submit" value="SUBMIT">
+            </fieldset>
+            </fieldset>
+    </form>
+</body>
+</html>
